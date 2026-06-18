@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Lista de Tarefas</h1>
+            <p id="contador">0 tarefas pendentes</p>
+        </header>
+        <main>
+            <div class="form">
+                <input type="text" id="input-tarefa" placeholder="Digite uma nova tarefa..." onkeydown="teclaEnter(event)">
+                <button onclick="adicionar()">➤</button>
+            </div>
+            <section class="filtros">
+                <button onclick="filtrar('todas')" id="btn-todas" class="ativo">Todas</button>
+                <button onclick="filtrar('pendentes')" id="btn-pendentes">Pendentes</button>
+                <button onclick="filtrar('concluidas')" id="btn-concluidas">Concluídas</button>
+            </section>
+            <ul id="lista"></ul>
+            <p id="vazio" class="vazio">Sem tarefas.</p>
+        </main>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
