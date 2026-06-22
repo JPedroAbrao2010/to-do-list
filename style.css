@@ -21,7 +21,7 @@ header {
 }
 
 h1 {
-    font-size: 4rem;
+    font-size: 3rem;
     font-weight: 600;
 }
 
@@ -29,12 +29,11 @@ h1 {
     color: #94a3b8;
     font-size: 0.875rem;
     margin-top: 4px;
-    display: none;
 }
 
 .form {
     display: flex;
-    gap: 8px;
+    gap: 2px;
     margin-bottom: 16px;
 }
 
@@ -69,7 +68,7 @@ button:hover {
 
 .filtros {
   display: flex;
-  gap: 8px;
+  gap: 3px;
   margin-bottom: 24px;
 }
 
@@ -107,7 +106,9 @@ li {
 
 li span {
   flex: 1;
-  font-size: 0.9rem;
+  font-size: 22px;
+  overflow-wrap: break-word;
+  word-break: break-word;
 }
 
 li.concluida span {
@@ -120,7 +121,7 @@ li button {
   background: transparent;
   border: none;
   padding: 4px 8px;
-  font-size: 1rem;
+  font-size: 0.9rem;
 }
 
 li button:hover {
