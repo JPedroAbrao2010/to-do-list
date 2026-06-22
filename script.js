@@ -107,7 +107,7 @@ function renderizar() {
             </span>
 
             <button onclick="remover(${indiceOriginal})">
-                ❌
+                🗑️
             </button>
         `;
 
